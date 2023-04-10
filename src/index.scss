@@ -1,0 +1,46 @@
+/* Reset de estilo */
+
+/* Remove as margens e preenchimentos padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a fonte padrão */
+html {
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Remove a decoração de links */
+a {
+  text-decoration: none;
+}
+
+/* Define a cor padrão do texto */
+body {
+  color: rgb(47, 255, 47);
+  background-color: black;
+}
+
+/* Remove a borda padrão de elementos */
+input,
+button,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+/* Remove o estilo padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Define o tamanho padrão para a imagem */
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,33 @@
+.box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  max-width: 500px;
+  margin: 35vh auto 0;
+  padding: 24px;
+  opacity: 0.9;
+}
+
+.request__cep {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.request__cep input {
+  background: black;
+  border-radius: 4px;
+  color: rgb(47, 255, 47);
+  padding: 8px 16px;
+}
+
+.cep {
+  margin-top: 16px;
+}
+
+.cep span {
+  color: white;
+}

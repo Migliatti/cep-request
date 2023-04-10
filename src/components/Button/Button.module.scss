@@ -1,0 +1,17 @@
+.button1 {
+  background-color: #2fff2f;
+  color: black;
+  padding: 8px 16px;
+  margin: 0 auto;
+  width: 50%;
+  font-weight: 700;
+  font-family: "Roboto Mono";
+  border-radius: 4px;
+}
+
+.button1:hover {
+    background-color: #199919;
+    color: white;
+    transition: 0.7s;
+    cursor: pointer;
+}
