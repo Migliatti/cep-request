@@ -19,7 +19,7 @@ export default function Form() {
     const response = await fetch(url);
     const data = await response.json();
     if (data.erro) {
-      throw new Error("CEP não encontrado na base de dados do ViaCEP");
+      throw new Error("CEP não encontrado! Digite um CEP válido");
     }
     return data;
   }
