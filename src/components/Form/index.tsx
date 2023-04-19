@@ -18,6 +18,9 @@ export default function Form() {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
     const response = await fetch(url);
     const data = await response.json();
+    if (data.erro) {
+      throw new Error("CEP não encontrado na base de dados do ViaCEP");
+    }
     return data;
   }
 
@@ -25,11 +28,15 @@ export default function Form() {
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
     event.preventDefault();
-    const data = await buscarCep(cep);
-    setEndereco(data.logradouro);
-    setLocalidade(data.localidade);
-    setUf(data.uf);
-    setBairro(data.bairro);
+    try {
+      const data = await buscarCep(cep);
+      setEndereco(data.logradouro);
+      setLocalidade(data.localidade);
+      setUf(data.uf);
+      setBairro(data.bairro);
+    } catch (error) {
+      alert((error as Error).message);
+    }
   }
 
   return (
