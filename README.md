@@ -1,7 +1,15 @@
-# Para mexer com projeto
+## Site
+[Link do site](https://cep-request.vercel.app/)
+## Como Interagir com o Projeto
+Copie o link do projeto, abra o terminal e siga as instruçoes:
 
-faça o clone dele, e no terminal dele escreva
+1. Clone o repositório:
+    `git clone "link"`
 
-> npm install
+2. Navegue até o diretório do projeto:
+   `cd cep-request`
 
-e pronto ja esta livre pra mexer
+3. Instale as dependências:
+   `npm install`
+
+Agora você está pronto para começar a explorar e trabalhar neste projeto. Divirta-se!
